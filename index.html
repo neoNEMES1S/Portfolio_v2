@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ankit Johri — AI Engineer</title>
+  <meta name="description" content="Ankit Johri — AI Engineer building agentic systems, RAG pipelines, and computer vision at enterprise scale.">
+  <meta property="og:title" content="Ankit Johri — AI Engineer">
+  <meta property="og:description" content="AI Engineer. I take models out of notebooks and into production — agentic systems, RAG pipelines, and computer vision at enterprise scale.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/portfolio.css">
+  <link rel="stylesheet" href="css/mockups.css">
+</head>
+<body class="reveals-on">
+
+<!-- Nav -->
+<nav class="global-nav">
+  <div class="nav-inner">
+    <a class="nav-name" href="#top">Ankit Johri</a>
+    <ul>
+      <li><a href="#work">Work</a></li>
+      <li class="nav-hide-sm"><a href="#skills">Tooling</a></li>
+      <li class="nav-hide-sm"><a href="#experience">Experience</a></li>
+      <li><a href="#open-source">Open Source</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Hero -->
+<header class="tile hero hero-shader" id="top">
+  <canvas id="hero-canvas"></canvas>
+  <div class="tile-inner">
+    <h1 class="t-hero reveal">Ankit Johri.</h1>
+    <p class="t-lead-airy reveal">AI Engineer. I take models out of notebooks and into production&nbsp;— agentic systems, RAG pipelines, and computer vision at enterprise scale.</p>
+    <div class="tile-ctas reveal">
+      <a class="btn btn-primary btn-hero" href="#work">See the work</a>
+      <a class="btn btn-ghost-light btn-hero" href="#contact">Get in touch</a>
+    </div>
+    <div class="render mock-term reveal">
+      <div class="win-bar">
+        <div class="win-dots"><span></span><span></span><span></span></div>
+        <span class="win-title">ankit@production — zsh</span>
+      </div>
+      <pre><span class="tm">$</span> ankit --status
+<span class="tb">role</span>        AI Engineer · SDE-II, Aguna Solutions
+<span class="tb">previously</span>  IBM · Application Developer, Cloud · 4 yrs
+<span class="tb">focus</span>       agentic systems · RAG · computer vision
+<span class="tb">stack</span>       LangGraph · FastAPI · AWS · watsonx · Docker
+<span class="tg">status</span>      open to interesting problems <span class="cursor"></span></pre>
+    </div>
+  </div>
+</header>
+
+<!-- Project 01 — CCTV -->
+<section class="tile tile-dark on-dark" id="work">
+  <div class="tile-inner">
+    <p class="tile-kicker reveal">Featured work · 01 — Computer Vision</p>
+    <h2 class="t-display reveal">CCTV Anomaly Detection.</h2>
+    <p class="t-lead reveal">A real-time computer vision SaaS designed for 100,000+ cameras across 25,000+ sites. Loitering, tailgating, tampering — flagged the moment they happen, cutting footage review by 60%.</p>
+    <p class="t-caption tile-meta reveal">Vision models · Event-driven video pipelines · Smart storage · AWS</p>
+    <div class="render mock-cctv reveal">
+      <div class="win-bar">
+        <span class="win-title">Sentinel — Site 0412 · Mumbai BKC</span>
+        <span class="live-chip">LIVE</span>
+      </div>
+      <div class="cctv-body">
+        <div class="cam-grid">
+          <div class="cam"><span class="cam-id">CAM-01 · LOBBY</span></div>
+          <div class="cam alert"><span class="cam-id">CAM-02 · VAULT</span><div class="bbox"></div></div>
+          <div class="cam"><span class="cam-id">CAM-03 · ATM</span></div>
+          <div class="cam"><span class="cam-id">CAM-04 · DOCK</span></div>
+          <div class="cam"><span class="cam-id">CAM-05 · GATE</span></div>
+          <div class="cam"><span class="cam-id">CAM-06 · FLOOR-2</span></div>
+        </div>
+        <div class="cctv-side">
+          <h4>EVENTS</h4>
+          <div class="alert-row hot"><strong>Loitering detected</strong>CAM-02 · Vault corridor <span class="ts">· now</span></div>
+          <div class="alert-row"><strong>Tailgating resolved</strong>CAM-05 · Main gate <span class="ts">· 4m ago</span></div>
+          <div class="alert-row"><strong>Tamper check passed</strong>All cameras <span class="ts">· 12m ago</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Project 02 — RAG -->
+<section class="tile tile-light">
+  <div class="tile-inner">
+    <p class="tile-kicker reveal">Featured work · 02 — LLM Engineering</p>
+    <h2 class="t-display reveal">Enterprise Knowledge Retrieval.</h2>
+    <p class="t-lead reveal">A watsonx-powered RAG assistant that put an enterprise's institutional knowledge one question away. Retrieval productivity up 94%.</p>
+    <p class="t-caption tile-meta reveal">IBM watsonx · ICA · RAG pipelines · Vector search · Prompt engineering</p>
+    <div class="render mock-rag reveal">
+      <div class="win-bar">
+        <div class="win-dots"><span></span><span></span><span></span></div>
+        <span class="win-title">Knowledge Assistant</span>
+      </div>
+      <div class="rag-body">
+        <div class="rag-q">What's our SLA for Sev-1 incidents on the payments platform?</div>
+        <div class="rag-a">Sev-1 incidents must be acknowledged within <strong>15 minutes</strong> and resolved within <strong>4 hours</strong>. Escalation routes to the on-call platform lead, then the duty manager after 30 minutes without acknowledgment.</div>
+        <div class="rag-sources">
+          <span class="rag-src">incident-runbook.pdf</span>
+          <span class="rag-src">sla-matrix.xlsx</span>
+          <span class="rag-src">ops-wiki / sev-1</span>
+        </div>
+        <span class="rag-latency">Answered in 1.8 s · 3 sources cited</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Project 03 — IntelliDMS -->
+<section class="tile tile-parchment">
+  <div class="tile-inner">
+    <p class="tile-kicker reveal">Featured work · 03 — Platform Engineering</p>
+    <h2 class="t-display reveal">IntelliDMS.</h2>
+    <p class="t-lead reveal">A multi-tenant platform that digitized an enterprise's entire approval universe — procurement, contracts, CAPEX, purchase orders. Its no-code studio cut change-request dependency by 45%.</p>
+    <p class="t-caption tile-meta reveal">Next.js · FastAPI · PostgreSQL · LDAP SSO · Docker · Alembic</p>
+    <div class="render mock-flow reveal">
+      <div class="win-bar">
+        <span class="win-title">Studio — Approval Workflow Designer</span>
+        <span class="flow-pub">Publish</span>
+      </div>
+      <div class="flow-canvas">
+        <div class="flow-node start"><strong>MRF raised</strong><span>Requester · any tenant</span></div>
+        <div class="flow-link"></div>
+        <div class="flow-node"><strong>Manager approval</strong><span>Serial · 24 h SLA</span></div>
+        <div class="flow-link"></div>
+        <div class="flow-fork">
+          <div class="fork-item"><div class="flow-node"><strong>Finance review</strong><span>Parallel branch</span></div></div>
+          <div class="fork-item"><div class="flow-node"><strong>Procurement</strong><span>Parallel · RFQ dispatch</span></div></div>
+        </div>
+        <div class="flow-link"></div>
+        <div class="flow-node"><strong>PO issued</strong><span>Audit trail · email</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects 04 + 05 — duo -->
+<div class="tile-duo">
+  <section class="tile tile-dark-2 on-dark">
+    <div class="tile-inner">
+      <p class="tile-kicker reveal">Featured work · 04 — Edge AI</p>
+      <h2 class="t-display reveal">Edge-AI Streaming.</h2>
+      <p class="t-lead reveal">Raspberry Pi 5 to cloud inference, live. Real-time RTSP pipelines that made model experimentation 50% faster.</p>
+      <p class="t-caption tile-meta reveal">Raspberry Pi 5 · RTSP · CV inference · Cloudflare Tunnel</p>
+      <div class="render mock-edge reveal">
+        <div class="win-bar">
+          <span class="win-title">pi5 — stream.py</span>
+          <span class="edge-live">LIVE</span>
+        </div>
+        <pre><span class="tm">$</span> python stream.py --src rtsp://pi5.local:8554
+<span class="tg">[ ok ]</span> camera connected · 1080p @ 30 fps
+<span class="tg">[ ok ]</span> tunnel up → <span class="tb">infer.cloud/ankit</span>
+<span class="tm">[ inf ]</span> person 0.96 · frame 18 422
+<span class="tm">[ inf ]</span> vehicle 0.91 · frame 18 423
+<span class="tm">latency</span> 84 ms · <span class="tm">uptime</span> 31 d</pre>
+      </div>
+    </div>
+  </section>
+  <section class="tile tile-light">
+    <div class="tile-inner">
+      <p class="tile-kicker reveal">Featured work · 05 — Cloud AI</p>
+      <h2 class="t-display reveal">Chatbot Platform.</h2>
+      <p class="t-lead reveal">Full-stack conversational AI, containerized and shipped on AWS Fargate. Deployment consistency up 45%.</p>
+      <p class="t-caption tile-meta reveal">Angular · Amazon ECR · AWS Fargate · CI/CD</p>
+      <div class="render mock-bot reveal">
+        <div class="win-bar">
+          <div class="win-dots"><span></span><span></span><span></span></div>
+          <span class="win-title">Assistant — production</span>
+        </div>
+        <div class="bot-body">
+          <div class="bot-msg user">Where's my order #48201?</div>
+          <div class="bot-msg bot">Your order shipped this morning and arrives Thursday. Want the tracking link?</div>
+          <div class="bot-deploy">
+            <div class="bot-step"><span class="ok">✓</span>Image pushed to Amazon ECR</div>
+            <div class="bot-step"><span class="ok">✓</span>Fargate service updated · zero downtime</div>
+            <div class="bot-step"><span class="ok">✓</span>Health checks passing</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- Skills -->
+<section class="section tile-parchment" id="skills">
+  <div class="section-inner">
+    <h2 class="t-display reveal">Tooling.</h2>
+    <p class="section-sub reveal">The stack behind the work — chosen for production, not for the résumé.</p>
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <h3>Agents &amp; LLM Engineering</h3>
+        <p class="skill-sub">Multi-agent workflows, retrieval, optimization</p>
+        <ul>
+          <li>LangGraph</li><li>LangChain</li><li>CrewAI</li><li>AutoGen</li>
+          <li>OpenAI Agents SDK</li><li>RAG pipelines</li><li>Vector search</li>
+          <li>Tool calling</li><li>Prompt caching</li>
+        </ul>
+      </div>
+      <div class="skill-card reveal">
+        <h3>AI-Assisted Development</h3>
+        <p class="skill-sub">Shipping faster with AI in the loop</p>
+        <ul>
+          <li>Claude Code</li><li>OpenAI Codex</li><li>Cursor</li>
+          <li>GitHub Copilot</li><li>AI code review</li><li>Test generation</li>
+        </ul>
+      </div>
+      <div class="skill-card reveal">
+        <h3>Cloud &amp; DevOps</h3>
+        <p class="skill-sub">From container to production</p>
+        <ul>
+          <li>AWS</li><li>Fargate</li><li>Amazon ECR</li><li>IBM Cloud VPC</li>
+          <li>Kubernetes</li><li>Docker</li><li>CI/CD</li><li>Cloudflare Tunnel</li>
+        </ul>
+      </div>
+      <div class="skill-card reveal">
+        <h3>Full-Stack &amp; Data</h3>
+        <p class="skill-sub">The plumbing AI products run on</p>
+        <ul>
+          <li>Next.js</li><li>React</li><li>TypeScript</li><li>FastAPI</li>
+          <li>PostgreSQL</li><li>Kafka</li><li>Airflow</li><li>MongoDB</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Experience -->
+<section class="section tile-light" id="experience">
+  <div class="section-inner">
+    <h2 class="t-display reveal">Experience.</h2>
+    <p class="section-sub reveal">Four years of production software, with AI at the center of it.</p>
+    <div class="xp-list">
+      <div class="xp-row reveal">
+        <div class="xp-when">Jan 2026 — Present</div>
+        <div>
+          <div class="xp-role">SDE-II</div>
+          <div class="xp-co">Aguna Solutions</div>
+          <ul class="xp-points">
+            <li>Built IntelliDMS, a production multi-tenant document &amp; request platform, end to end.</li>
+            <li>Architected LDAP-based SSO across 10+ enterprise roles — manual user management down 60%.</li>
+            <li>Led data engineering and ML modeling for a predictive-maintenance system on AWS.</li>
+            <li>Deployed CNN-based face recognition for NIC India at 95%+ real-time accuracy.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="xp-row reveal">
+        <div class="xp-when">Jun 2022 — Jan 2026</div>
+        <div>
+          <div class="xp-role">Application Developer, Cloud</div>
+          <div class="xp-co">IBM</div>
+          <ul class="xp-points">
+            <li>Delivered production features across IBM Cloud and Oracle DB applications — recurring issues down 25%.</li>
+            <li>Supported migration from on-prem to IBM Cloud VPC with Kubernetes and Cloud Functions.</li>
+            <li>Automated manual workflows with IBM Automate, improving job efficiency by 40%.</li>
+            <li>Built GenAI PoCs on watsonx — including a knowledge-retrieval assistant pitched to enterprise clients.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Open Source -->
+<section class="tile tile-dark-3 on-dark" id="open-source">
+  <div class="tile-inner">
+    <p class="tile-kicker reveal">GitHub · @neoNEMES1S</p>
+    <h2 class="t-display reveal">Open source.</h2>
+    <p class="t-lead reveal">The experiments behind the production work.</p>
+    <div class="repo-grid">
+      <div class="repo-card reveal">
+        <span class="repo-name">crypto-alert-notifier</span>
+        <p>Threshold-based crypto price alerts over the CCXT API — checked and emailed every 30 seconds.</p>
+        <span class="repo-lang"><span class="dot" style="background: #3572a5;"></span>Python</span>
+      </div>
+      <div class="repo-card reveal">
+        <span class="repo-name">edge-ai-streaming</span>
+        <p>Raspberry Pi 5 → RTSP → cloud inference. A live pipeline for testing vision models on real feeds.</p>
+        <span class="repo-lang"><span class="dot" style="background: #3572a5;"></span>Python</span>
+      </div>
+      <div class="repo-card reveal">
+        <span class="repo-name">rag-knowledge-poc</span>
+        <p>Enterprise knowledge retrieval with watsonx and ICA — the PoC that hit 94% faster retrieval.</p>
+        <span class="repo-lang"><span class="dot" style="background: #3178c6;"></span>TypeScript</span>
+      </div>
+    </div>
+    <a class="btn btn-primary reveal" href="https://github.com/neoNEMES1S" target="_blank" rel="noopener">Follow on GitHub</a>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="tile tile-light" id="contact">
+  <div class="tile-inner">
+    <h2 class="t-display reveal">Let's build something intelligent.</h2>
+    <p class="t-lead-airy reveal" style="max-width: 560px; margin-left: auto; margin-right: auto;">Open to AI engineering roles, consulting, and genuinely interesting problems.</p>
+    <div class="contact-links reveal">
+      <a class="btn btn-primary btn-hero" href="mailto:ankit.johri@icloud.com">Email Ankit</a>
+      <a class="btn btn-ghost btn-hero" href="https://www.linkedin.com/in/ankit-johri-up78/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <div class="t-caption-strong">Ankit Johri — AI Engineer</div>
+      <div class="t-fine">© 2026 Ankit Johri. Designed with restraint.</div>
+    </div>
+    <div class="t-caption" style="display: flex; gap: 24px;">
+      <a href="https://github.com/neoNEMES1S" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/ankit-johri-up78/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:ankit.johri@icloud.com">Email</a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.165.0/build/three.min.js" integrity="sha384-nRIVs902wLMhvoff40uD2wN5al/nzPlD2CiEcPwXc6eKC4r00asHbgXFj+G+fvdc" crossorigin="anonymous"></script>
+<script>
+  // Scroll reveals
+  (function () {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+  })();
+
+  // WebGL hero shader
+  (function () {
+    var canvas = document.getElementById('hero-canvas');
+    if (!canvas || !window.THREE) return;
+
+    var scene = new THREE.Scene();
+    var camera = new THREE.OrthographicCamera(-1, 1, 1, -1, 0, -1);
+    var renderer = new THREE.WebGLRenderer({ canvas: canvas, antialias: false });
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    renderer.setClearColor(0x000000);
+
+    var vertexShader = [
+      'attribute vec3 position;',
+      'void main() {',
+      '  gl_Position = vec4(position, 1.0);',
+      '}'
+    ].join('\n');
+
+    var fragmentShader = [
+      'precision highp float;',
+      'uniform vec2 resolution;',
+      'uniform float time;',
+      'uniform float xScale;',
+      'uniform float yScale;',
+      'uniform float distortion;',
+      'void main() {',
+      '  vec2 p = (gl_FragCoord.xy * 2.0 - resolution) / min(resolution.x, resolution.y);',
+      '  float d = length(p) * distortion;',
+      '  float rx = p.x * (1.0 + d);',
+      '  float gx = p.x;',
+      '  float bx = p.x * (1.0 - d);',
+      '  float r = 0.05 / abs(p.y + sin((rx + time) * xScale) * yScale);',
+      '  float g = 0.05 / abs(p.y + sin((gx + time) * xScale) * yScale);',
+      '  float b = 0.05 / abs(p.y + sin((bx + time) * xScale) * yScale);',
+      '  gl_FragColor = vec4(r, g, b, 1.0);',
+      '}'
+    ].join('\n');
+
+    var uniforms = {
+      resolution: { value: new THREE.Vector2(window.innerWidth, window.innerHeight) },
+      time:       { value: 0.0 },
+      xScale:     { value: 1.0 },
+      yScale:     { value: 0.5 },
+      distortion: { value: 0.05 }
+    };
+
+    var positions = new THREE.BufferAttribute(new Float32Array([
+      -1, -1, 0,  1, -1, 0,  -1, 1, 0,
+       1, -1, 0,  -1,  1, 0,   1, 1, 0
+    ]), 3);
+    var geometry = new THREE.BufferGeometry();
+    geometry.setAttribute('position', positions);
+
+    var material = new THREE.RawShaderMaterial({
+      vertexShader: vertexShader,
+      fragmentShader: fragmentShader,
+      uniforms: uniforms,
+      side: THREE.DoubleSide
+    });
+
+    scene.add(new THREE.Mesh(geometry, material));
+
+    function resize() {
+      var hero = document.querySelector('.hero');
+      var w = window.innerWidth;
+      var h = hero ? hero.offsetHeight : window.innerHeight;
+      renderer.setSize(w, h, false);
+      uniforms.resolution.value.set(w, h);
+    }
+    resize();
+    window.addEventListener('resize', resize);
+
+    var animId;
+    function animate() {
+      uniforms.time.value += 0.01;
+      renderer.render(scene, camera);
+      animId = requestAnimationFrame(animate);
+    }
+    animate();
+  })();
+</script>
+
+</body>
+</html>
